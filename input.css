@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "gilroy";
+    src: url(../Gilroy-Regular.ttf);
+  }
+}
+
+#bg-hero {
+  background-image: url("../powerbibanner-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -120px;
+}
+
+#bg-logos-expertise {
+  background-image: url("../nsplsh_376a516833456953384273~mv2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 150px;
+}
+
+#bg-contact {
+  background-image: url("../contact-bg.png");
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position-y: 100px;
+}
+
+.logos-slide {
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 12px;
+}
+
+@keyframes slide {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%);
+  }
+}
+
+.hovering:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.hovering {
+  position: relative;
+}
+
+.hovering::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100px;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  content: "";
+  z-index: 2;
+}
+
+.hovering::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 100px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  content: "";
+  z-index: 2;
+}
