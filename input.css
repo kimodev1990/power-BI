@@ -9,6 +9,14 @@
   }
 }
 
+.second {
+  display: none;
+}
+
+.first:hover .second {
+  display: block;
+}
+
 #bg-hero {
   background-image: url("../powerbibanner-scaled.jpg");
   background-repeat: no-repeat;
@@ -28,6 +36,42 @@
   background-repeat: no-repeat;
   background-size: 45%;
   background-position-y: 100px;
+}
+
+#bg-powerBI {
+  background-image: url("../powerBI-imgs/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-contact-header {
+  background-image: url("../contact-header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-services {
+  background-image: url("../powerBI-imgs/man-ipad.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#fading {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.shadow-text {
+  text-shadow: black 0px 5px 10px;
 }
 
 .logos-slide {

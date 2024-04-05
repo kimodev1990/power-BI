@@ -9,10 +9,15 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
+      scale: {
+        175: "1.75",
+      },
       colors: {
         btnColor: "#62BE4D",
         bgexpertise: "#007CAF",
         bgfooter: "#003E58",
+        bgPower: "#4CA2C6",
+        lineinput: "#E7E7E7",
       },
       fontFamily: {
         gilroy: ["gilroy", "sans-serif"],

@@ -10,29 +10,105 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<body id="fading">
     <!-- header section -->
     <header id="bg-hero">
-        <div class="bg-white">
+        <div class="bg-white fixed w-full z-10">
             <div class="container mx-auto flex items-center justify-between ">
-                <img class="w-32" src="./power-bi-high-resolution-logo.png" alt="logo">
-                <div class="flex items-center justify-center space-x-12 text-blue-600">
-                    <h1>Consulting</h1>
-                    <h1>Solutions</h1>
-                    <h1>Blog</h1>
-                    <h1>Contact us</h1>
+                <a href="./index.html">
+                    <img class="w-32" src="./power-bi-high-resolution-logo.png" alt="logo">
+                </a>
+                <div id="consult" class="flex items-center justify-center space-x-12 text-blue-600 relative">
+                    <div id="consult-click">
+                        <h1 class="cursor-pointer">Consulting</h1>
+                    </div>
+                    <div id="consulting-popup-situation" class="hidden absolute -left-16 top-8">
+                        <div class="flex flex-col items-start p-4 space-y-4  bg-white  shadow-md shadow-black text-sm">
+                            <div class="flex items-center group">
+                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                <a href="./powerBI-page.html">
+                                    <h3 class="cursor-pointer">Power BI</h3>
+                                </a>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                <a href="#">
+                                    <h3 class="cursor-pointer">Tableau</h3>
+                                </a>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                <a href="#">
+                                    <h3 class="cursor-pointer">Excel</h3>
+                                </a>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                <a href="#">
+                                    <h3 class="cursor-pointer">BigQuery</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="solutions-click">
+                        <h1 class="cursor-pointer">Solutions</h1>
+                    </div>
+                    <div id="solutions-popup-situation" class="hidden absolute top-8 right-20">
+                        <div class="flex flex-col items-start p-4 space-y-4 bg-white shadow-md shadow-black text-sm">
+                            <div class="flex items-center group">
+                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                <a href="#">
+                                    <h3 class="cursor-pointer">Google Ads</h3>
+                                </a>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                <a href="#">
+                                    <h3 class="cursor-pointer">Google Analytics</h3>
+                                </a>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                <a href="#">
+                                    <h3 class="cursor-pointer">Xero</h3>
+                                </a>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                <a href="#">
+                                    <h3 class="cursor-pointer">Key Performance Inicators</h3>
+                                </a>
+                            </div>
+                            <div class="flex items-center group">
+                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                <a href="#">
+                                    <h3 class="cursor-pointer">HR Dashboard</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#">
+                        <h1 class="cursor-pointer">Blog</h1>
+                    </a>
+                    <a href="./contact.html">
+                        <h1 class="cursor-pointer">Contact us</h1>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="flex flex-col items-center justify-center space-y-10 py-20 text-white text-center bg-black/75">
+        <div
+            class="flex flex-col items-center justify-center space-y-10 pb-20 text-white text-center bg-black/75 pt-52">
             <h1 class="text-6xl font-bold">Power BI Consulting Services</h1>
             <h2 class="text-2xl">Helping you build insightful dashboards that can drive easy decision making for your
                 business processes</h2>
-            <button
-                class="block text-lg bg-btnColor p-4 font-semibold hover:bg-white hover:text-black transition-colors duration-500">
-                Start with a 2-week Engagement
-                <img src="./icon-arrow.svg" alt="go-to logo" class="inline w-7">
-            </button>
+            <a href="./contact.html">
+                <button
+                    class="block text-lg bg-btnColor p-4 font-semibold hover:bg-white hover:text-black transition-colors duration-500">
+                    Start with a 2-week Engagement
+                    <img src="./icon-arrow.svg" alt="go-to logo" class="inline w-7">
+                </button>
+            </a>
         </div>
     </header>
 
@@ -44,16 +120,26 @@
             </div>
             <div
                 class="flex items-center justify-center space-x-16 w-3/4 scale-75 hover:scale-90 transition-all duration-700">
-                <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900"><img src="./Website.png"
-                        alt="power BI logo"></div>
-                <div data-aos="fade-right" data-aos-duration="2500" data-aos-delay="600"><img
-                        src="./tableau_cmyk_2015.png" alt="tableau logo">
-                </div>
-                <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400"><img
-                        src="./google bigquery.png" alt="google big query">
-                </div>
-                <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"><img src="./excel_2.png"
-                        alt="excel logo"></div>
+                <a href="./powerBI-page.html">
+                    <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900"><img src="./Website.png"
+                            alt="power BI logo">
+                    </div>
+                </a>
+                <a href="#">
+                    <div data-aos="fade-right" data-aos-duration="2500" data-aos-delay="600"><img
+                            src="./tableau_cmyk_2015.png" alt="tableau logo">
+                    </div>
+                </a>
+                <a href="#">
+                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400"><img
+                            src="./google bigquery.png" alt="google big query">
+                    </div>
+                </a>
+                <a href="#">
+                    <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"><img src="./excel_2.png"
+                            alt="excel logo">
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -142,8 +228,11 @@
         <h1 class="mx-auto max-w-3xl text-center text-7xl font-extrabold text-bgexpertise">OUR WORK
         </h1>
         <div class="mx-auto max-w-5xl relative pt-7">
-            <a href="">
-                <img class="mx-auto" src="./logos/video.jpg" alt="">
+            <img class="mx-auto" src="./logos/video.jpg" alt="">
+            <a href="#" class="absolute right-20 bottom-0">
+                <button class="max-w-lg mx-auto text-white bg-green-900 p-4">
+                    <h3>Add URL Link</h3>
+                </button>
             </a>
             <div class="absolute -bottom-24 left-0 w-56" data-aos="zoom-in" data-aos-duration="300"
                 data-aos-delay="500">
@@ -236,6 +325,7 @@
             once: true
         });
     </script>
+    <script src="./landing-page-script.js"></script>
 </body>
 
 </html>
