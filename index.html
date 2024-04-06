@@ -14,97 +14,210 @@
     <!-- header section -->
     <header id="bg-hero">
         <div class="bg-white fixed w-full z-10">
-            <div class="container mx-auto flex items-center justify-between ">
-                <a href="./index.html">
-                    <img class="w-32" src="./power-bi-high-resolution-logo.png" alt="logo">
-                </a>
-                <div id="consult" class="flex items-center justify-center space-x-12 text-blue-600 relative">
-                    <div id="consult-click">
-                        <h1 class="cursor-pointer">Consulting</h1>
+            <div class="relative">
+                <div class="container mx-auto flex items-center justify-between ">
+                    <a href="./index.html">
+                        <img class="w-32" src="./power-bi-high-resolution-logo.png" alt="logo">
+                    </a>
+                    <div id="menu-hamburger-mobile"
+                        class="md:hidden hamburger block outline-none cursor-pointer z-50 absolute right-10">
+                        <div class="top-line"></div>
+                        <div class="middle-line"></div>
+                        <div class="last-line"></div>
                     </div>
-                    <div id="consulting-popup-situation" class="hidden absolute -left-16 top-8">
-                        <div class="flex flex-col items-start p-4 space-y-4  bg-white  shadow-md shadow-black text-sm">
-                            <div class="flex items-center group">
-                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
-                                <a href="./powerBI-page.html">
-                                    <h3 class="cursor-pointer">Power BI</h3>
-                                </a>
+                    <div id="menu-content-mobile"
+                        class="md:hidden absolute top-0 right-0 w-56 h-fit pb-10 bg-bgexpertise hidden">
+                        <div class="flex flex-col items-start pt-20 pl-6 space-y-4">
+                            <div id="consult-click-mobile">
+                                <h1 class="cursor-pointer">Consulting</h1>
                             </div>
-                            <div class="flex items-center group">
-                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
-                                <a href="#">
-                                    <h3 class="cursor-pointer">Tableau</h3>
-                                </a>
-                            </div>
-                            <div class="flex items-center group">
-                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
-                                <a href="#">
-                                    <h3 class="cursor-pointer">Excel</h3>
-                                </a>
-                            </div>
-                            <div class="flex items-center group">
-                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
-                                <a href="#">
-                                    <h3 class="cursor-pointer">BigQuery</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="solutions-click">
-                        <h1 class="cursor-pointer">Solutions</h1>
-                    </div>
-                    <div id="solutions-popup-situation" class="hidden absolute top-8 right-20">
-                        <div class="flex flex-col items-start p-4 space-y-4 bg-white shadow-md shadow-black text-sm">
-                            <div class="flex items-center group">
-                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
-                                <a href="#">
-                                    <h3 class="cursor-pointer">Google Ads</h3>
-                                </a>
-                            </div>
-                            <div class="flex items-center group">
-                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
-                                <a href="#">
-                                    <h3 class="cursor-pointer">Google Analytics</h3>
-                                </a>
-                            </div>
-                            <div class="flex items-center group">
-                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
-                                <a href="#">
-                                    <h3 class="cursor-pointer">Xero</h3>
-                                </a>
-                            </div>
-                            <div class="flex items-center group">
-                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
-                                <a href="#">
-                                    <h3 class="cursor-pointer">Key Performance Inicators</h3>
-                                </a>
-                            </div>
-                            <div class="flex items-center group">
-                                <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
-                                <a href="#">
-                                    <h3 class="cursor-pointer">HR Dashboard</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                            <div>
+                                <div class="flex flex-col items-start space-y-2 text-sm pl-3">
+                                    <div id="consult-showpop-up-mobile" class="hidden">
+                                        <div class="flex items-center group">
+                                            <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none">
+                                            </div>
+                                            <a href="./powerBI-page.html">
+                                                <h3 class="cursor-pointer">Power BI</h3>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center group my-3">
+                                            <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none">
+                                            </div>
+                                            <a href="#">
+                                                <h3 class="cursor-pointer">Tableau</h3>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center group my-3">
+                                            <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none">
+                                            </div>
+                                            <a href="#">
+                                                <h3 class="cursor-pointer">Excel</h3>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center group">
+                                            <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none">
+                                            </div>
+                                            <a href="#">
+                                                <h3 class="cursor-pointer">BigQuery</h3>
+                                            </a>
+                                        </div>
+                                    </div>
 
-                    <a href="#">
-                        <h1 class="cursor-pointer">Blog</h1>
-                    </a>
-                    <a href="./contact.html">
-                        <h1 class="cursor-pointer">Contact us</h1>
-                    </a>
+                                </div>
+                            </div>
+                            <div id="solutions-click-mobile">
+                                <h1 class="cursor-pointer">Solutions</h1>
+                            </div>
+                            <div>
+                                <div class="flex flex-col items-start space-y-2 text-sm pl-3">
+                                    <div id="solutions-showpop-up-mobile" class="hidden">
+                                        <div class="flex items-center group">
+                                            <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none">
+                                            </div>
+                                            <a href="#">
+                                                <h3 class="cursor-pointer">Google Ads</h3>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center group my-3">
+                                            <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none">
+                                            </div>
+                                            <a href="#">
+                                                <h3 class="cursor-pointer">Google Analytics</h3>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center group">
+                                            <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none">
+                                            </div>
+                                            <a href="#">
+                                                <h3 class="cursor-pointer">Xero</h3>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center group my-3">
+                                            <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none">
+                                            </div>
+                                            <a href="#">
+                                                <h3 class="cursor-pointer">Key Performance Inicators</h3>
+                                            </a>
+                                        </div>
+                                        <div class="flex items-center group">
+                                            <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none">
+                                            </div>
+                                            <a href="#">
+                                                <h3 class="cursor-pointer">HR Dashboard</h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1 class="cursor-pointer mb-4">Blog</h1>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="./contact.html">
+                                    <h1 class="cursor-pointer">Contact us</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="consult"
+                        class="md:flex hidden items-center justify-center space-x-12 text-blue-600 relative">
+                        <div id="consult-click">
+                            <h1 class="cursor-pointer">Consulting</h1>
+                        </div>
+                        <div id="consulting-popup-situation" class="hidden absolute -left-16 top-8">
+                            <div
+                                class="flex flex-col items-start p-4 space-y-4  bg-white  shadow-md shadow-black text-sm">
+                                <div class="flex items-center group">
+                                    <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                    <a href="./powerBI-page.html">
+                                        <h3 class="cursor-pointer">Power BI</h3>
+                                    </a>
+                                </div>
+                                <div class="flex items-center group">
+                                    <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                    <a href="#">
+                                        <h3 class="cursor-pointer">Tableau</h3>
+                                    </a>
+                                </div>
+                                <div class="flex items-center group">
+                                    <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                    <a href="#">
+                                        <h3 class="cursor-pointer">Excel</h3>
+                                    </a>
+                                </div>
+                                <div class="flex items-center group">
+                                    <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                    <a href="#">
+                                        <h3 class="cursor-pointer">BigQuery</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="solutions-click">
+                            <h1 class="cursor-pointer">Solutions</h1>
+                        </div>
+                        <div id="solutions-popup-situation" class="hidden absolute top-8 right-20">
+                            <div
+                                class="flex flex-col items-start p-4 space-y-4 bg-white shadow-md shadow-black text-sm">
+                                <div class="flex items-center group">
+                                    <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                    <a href="#">
+                                        <h3 class="cursor-pointer">Google Ads</h3>
+                                    </a>
+                                </div>
+                                <div class="flex items-center group">
+                                    <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                    <a href="#">
+                                        <h3 class="cursor-pointer">Google Analytics</h3>
+                                    </a>
+                                </div>
+                                <div class="flex items-center group">
+                                    <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                    <a href="#">
+                                        <h3 class="cursor-pointer">Xero</h3>
+                                    </a>
+                                </div>
+                                <div class="flex items-center group">
+                                    <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                    <a href="#">
+                                        <h3 class="cursor-pointer">Key Performance Inicators</h3>
+                                    </a>
+                                </div>
+                                <div class="flex items-center group">
+                                    <div class="w-2 h-8 border-l-2 border-red-600 group-hover:border-none"></div>
+                                    <a href="#">
+                                        <h3 class="cursor-pointer">HR Dashboard</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#">
+                            <h1 class="cursor-pointer">Blog</h1>
+                        </a>
+                        <a href="./contact.html">
+                            <h1 class="cursor-pointer">Contact us</h1>
+                        </a>
+                    </div>
                 </div>
+
+
             </div>
+        </div>
+
         </div>
         <div
             class="flex flex-col items-center justify-center space-y-10 pb-20 text-white text-center bg-black/75 pt-52">
-            <h1 class="text-6xl font-bold">Power BI Consulting Services</h1>
-            <h2 class="text-2xl">Helping you build insightful dashboards that can drive easy decision making for your
+            <h1 class="md:text-6xl text-3xl font-bold">Power BI Consulting Services</h1>
+            <h2 class=" md:text-2xl text-lg">Helping you build insightful dashboards that can drive easy decision making
+                for your
                 business processes</h2>
             <a href="./contact.html">
                 <button
-                    class="block text-lg bg-btnColor p-4 font-semibold hover:bg-white hover:text-black transition-colors duration-500">
+                    class="block md:text-lg text-sm bg-btnColor p-4 font-semibold hover:bg-white hover:text-black transition-colors duration-500">
                     Start with a 2-week Engagement
                     <img src="./icon-arrow.svg" alt="go-to logo" class="inline w-7">
                 </button>
@@ -114,48 +227,51 @@
 
     <!-- Expertise section -->
     <section>
-        <div class="flex items-center h-[150px]" id="bg-logos-expertise">
-            <div class="bg-bgexpertise w-1/4 h-full flex items-center">
-                <h2 class="text-4xl mx-auto text-white font-semibold">Our Expertise</h2>
+        <div class="flex md:flex-row flex-col items-center md:h-[150px] h-[50px] ">
+            <div class="bg-bgexpertise md:w-1/4 w-full h-full flex items-center">
+                <h2 class="md:text-4xl text-xl text-center mx-auto text-white font-semibold">Our Expertise</h2>
             </div>
-            <div
-                class="flex items-center justify-center space-x-16 w-3/4 scale-75 hover:scale-90 transition-all duration-700">
-                <a href="./powerBI-page.html">
-                    <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900"><img src="./Website.png"
-                            alt="power BI logo">
-                    </div>
-                </a>
-                <a href="#">
-                    <div data-aos="fade-right" data-aos-duration="2500" data-aos-delay="600"><img
-                            src="./tableau_cmyk_2015.png" alt="tableau logo">
-                    </div>
-                </a>
-                <a href="#">
-                    <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400"><img
-                            src="./google bigquery.png" alt="google big query">
-                    </div>
-                </a>
-                <a href="#">
-                    <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"><img src="./excel_2.png"
-                            alt="excel logo">
-                    </div>
-                </a>
+            <div class="w-full bg-gray-300 md:h-[150px] flex items-center justify-center">
+                <div
+                    class=" flex items-center justify-center md:space-x-16  space-x-8  scale-75 hover:scale-90 transition-all duration-700">
+                    <a href="./powerBI-page.html">
+                        <div data-aos="fade-right" data-aos-duration="3000" data-aos-delay="900"><img
+                                src="./Website.png" alt="power BI logo">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-aos="fade-right" data-aos-duration="2500" data-aos-delay="600"><img
+                                src="./tableau_cmyk_2015.png" alt="tableau logo">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-aos="fade-right" data-aos-duration="2000" data-aos-delay="400"><img
+                                src="./google bigquery.png" alt="google big query">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"><img
+                                src="./excel_2.png" alt="excel logo">
+                        </div>
+                    </a>
+                </div>
             </div>
+
         </div>
     </section>
 
     <!-- caurosal sectoin -->
-    <section class="py-20">
+    <section class="pt-20 pb-7">
         <div class="mx-auto max-w-3xl flex items-center justify-between">
             <div class="w-2/5">
                 <div class="border-blue-200 border-b-2 w-full"></div>
             </div>
-            <h3 class="uppercase font-thin text-xl tracking-widest">trusted by</h3>
+            <h3 class="uppercase font-thin md:text-xl text-base text-center tracking-widest">trusted by</h3>
             <div class="w-2/5">
                 <div class="border-blue-200 border-b-2 w-full"></div>
             </div>
         </div>
-        <div class="max-w-7xl mx-auto whitespace-nowrap overflow-hidden group-hover:animate-none hovering pt-7">
+        <div class="max-w-7xl mx-auto whitespace-nowrap overflow-hidden group-hover:animate-none hovering md:pt-7 pt-3">
             <div class="logos inline-block">
                 <div class="logos-slide flex">
                     <img src="./logos/1.png" alt="">
@@ -189,69 +305,76 @@
     </section>
 
     <!-- simplifying your reporting -->
-    <section class="py-20">
+    <section class="md:py-20 py-5">
         <div class="mx-auto max-w-3xl text-center flex items-center justify-between">
-            <h3 class=" font-thin text-xl w-full tracking-widest">BOUTIQUE SERVICE</h3>
+            <h3 class=" font-thin md:text-xl text-base w-full tracking-widest">BOUTIQUE SERVICE</h3>
         </div>
-        <h1 class="mx-auto max-w-3xl text-center text-5xl font-extrabold text-bgexpertise">SIMPLIFYING YOUR REPORTING
+        <h1 class="mx-auto max-w-3xl text-center md:text-5xl text-2xl font-extrabold text-bgexpertise">SIMPLIFYING YOUR
+            REPORTING
         </h1>
-        <div class="max-w-5xl mx-auto flex space-x-10 items-center justify-between pt-16">
-            <div class="w-1/4 flex flex-col justify-center items-center  text-center">
-                <div class="w-20">
-                    <img src="./logos/chart-arrow.svg" alt="">
+        <div
+            class="max-w-5xl mx-auto flex md:flex-row flex-col md:space-x-10 space-x-0 space-y-5 md:space-y-0 items-center justify-center pt-16">
+            <div class="flex md:w-1/2 w-full justify-between">
+                <div class="w-1/2 flex flex-col justify-center items-center  text-center">
+                    <div class="w-20">
+                        <img src="./logos/chart-arrow.svg" alt="">
+                    </div>
+                    <h3 class="max-w-md lg:text-lg text-base">Report and dashboard development</h3>
                 </div>
-                <h3 class="max-w-md text-lg">Report and dashboard development</h3>
+                <div class="w-1/2 flex flex-col justify-center items-center  text-center">
+                    <div class="w-20 ">
+                        <img src="./logos/screen.svg" alt="">
+                    </div>
+                    <h3 class="max-w-md lg:text-lg text-base">Automating data and reporting processes</h3>
+                </div>
             </div>
-            <div class="w-1/4 flex flex-col justify-center items-center  text-center">
-                <div class="w-20 ">
-                    <img src="./logos/screen.svg" alt="">
+            <div class="flex md:w-1/2 w-full justify-between">
+                <div class="w-1/2 flex flex-col justify-center items-center  text-center">
+                    <div class=" w-20">
+                        <img src="./logos/pie.svg" alt="">
+                    </div>
+                    <h3 class="max-w-md lg:text-lg text-base">Data warehousing and integration</h3>
                 </div>
-                <h3 class="max-w-md text-lg">Automating data and reporting processes</h3>
-            </div>
-            <div class="w-1/4 flex flex-col justify-center items-center  text-center">
-                <div class=" w-20">
-                    <img src="./logos/pie.svg" alt="">
+                <div class="w-1/2 flex flex-col justify-center items-center  text-center">
+                    <div class=" w-20 ">
+                        <img src="./logos/magnify.svg" alt="">
+                    </div>
+                    <h3 class=" lg:text-lg text-base">Transforming data into <br> insight</h3>
                 </div>
-                <h3 class="max-w-md text-lg">Data warehousing and integration</h3>
-            </div>
-            <div class="w-1/4 flex flex-col justify-center items-center  text-center">
-                <div class=" w-20 ">
-                    <img src="./logos/magnify.svg" alt="">
-                </div>
-                <h3 class=" text-lg">Transforming data into insight</h3>
             </div>
         </div>
     </section>
 
     <!-- our work -->
-    <section class="py-20">
-        <h1 class="mx-auto max-w-3xl text-center text-7xl font-extrabold text-bgexpertise">OUR WORK
+    <section class="md:py-20 py-10">
+        <h1 class="mx-auto max-w-3xl text-center md:text-7xl text-3xl font-extrabold text-bgexpertise">OUR WORK
         </h1>
         <div class="mx-auto max-w-5xl relative pt-7">
             <img class="mx-auto" src="./logos/video.jpg" alt="">
-            <a href="#" class="absolute right-20 bottom-0">
+            <a href="#" class="absolute md:right-20 right-0 bottom-0">
                 <button class="max-w-lg mx-auto text-white bg-green-900 p-4">
                     <h3>Add URL Link</h3>
                 </button>
             </a>
             <div class="absolute -bottom-24 left-0 w-56" data-aos="zoom-in" data-aos-duration="300"
                 data-aos-delay="500">
-                <img src="./logos/mobile.png" alt="">
+                <img class="md:w-[224px] w-[120px]" src="./logos/mobile.png" alt="">
             </div>
         </div>
     </section>
 
     <!-- How can we help -->
-    <section id="bg-contact" class="pt-20 pb-40 bg-bgexpertise">
+    <section id="bg-contact" class="md:pt-20 pt-16 md:pb-40 pb-10 bg-bgexpertise">
         <div class="mx-auto max-w-3xl text-center flex items-center justify-between">
-            <h3 class=" font-thin text-xl w-full tracking-widest text-white">WE ARE HERE TO ASSIST</h3>
+            <h3 class=" font-thin md:text-xl text-base w-full tracking-widest text-white">WE ARE HERE TO ASSIST</h3>
         </div>
-        <h1 class="mx-auto max-w-3xl text-center text-5xl font-extrabold text-white">HOW CAN WE HELP?
+        <h1 class="mx-auto max-w-3xl text-center md:text-5xl text-3xl font-extrabold text-white">HOW CAN WE HELP?
         </h1>
-        <div class="flex justify-end px-52 pt-20">
-            <div>
-                <form class="flex flex-col  text-white">
-                    <div class="flex justify-between items-center space-x-10">
+        <div class="w-full flex lg:justify-end justify-center lg:pr-16">
+            <div class=" max-w-3xl  md:pt-20 pt-10">
+                <form class="flex flex-col  text-white px-3 md:px-0">
+                    <div
+                        class="flex md:flex-row flex-col md:justify-between justify-start md:items-center md:space-x-10 space-x-0">
                         <div class="flex flex-col justify-center space-y-2">
                             <h3>Name</h3>
                             <input
@@ -265,7 +388,7 @@
                                 type="text">
                         </div>
                     </div>
-                    <div class="flex justify-between items-center my-3">
+                    <div class="flex md:flex-row flex-col md:justify-between justify-start md:items-center my-3">
                         <div class="flex flex-col justify-center space-y-2">
                             <h3>Email</h3>
                             <input
@@ -291,30 +414,34 @@
                         Submit
                     </button>
                 </form>
+
             </div>
         </div>
+
     </section>
 
     <!-- footer -->
     <footer class="py-10 bg-bgfooter">
-        <div class="max-w-6xl mx-auto flex items-center justify-between">
-            <div class="flex items-center space-x-8">
+        <div
+            class="px-3 max-w-xs md:max-w-6xl mx-auto flex md:flex-row flex-col items-start md:items-center md:justify-between space-y-4 md:space-y-0">
+            <div
+                class=" max-w-xl flex md:flex-row flex-col md:items-center md:space-x-4 space-x-0 space-y-2 md:space-y-0">
                 <div class="flex items-center space-x-2">
                     <img class="w-7" src="./logos/email.svg" alt="">
-                    <h3 class="text-xl text-white underline underline-offset-2">info@reportsimple.com.au</h3>
+                    <h3 class="md:text-lg text-sm text-white underline underline-offset-2">info@reportsimple.com.au</h3>
                 </div>
                 <div class="flex items-center space-x-2">
                     <img class="w-7" src="./logos/mobile.svg" alt="">
-                    <h3 class="text-xl text-white">1300 844 431</h3>
+                    <h3 class="md:text-lg text-sm text-white">1300 844 431</h3>
                 </div>
             </div>
-            <div class="flex flex-col items-end text-white">
+            <div class="flex flex-col md:items-end text-white">
                 <a href="#"><img class="w-7" src="./logos/linkedin.png" alt=""></a>
-                <p class="my-3">Privacy Policy</p>
-                <p>©2024. All Rights Reserved. Report Simple. Data</p>
-                <p>Analytics Consulting. Gold Coast</p>
-                <p>LCS Direct Pty Ltd trading as Report Simple</p>
-                <p>ABN: 15 626 458 731</p>
+                <p class="my-3 md:text-base text-sm">Privacy Policy</p>
+                <p class="md:text-base text-xs">©2024. All Rights Reserved. Report Simple. Data</p>
+                <p class="md:text-base text-xs">Analytics Consulting. Gold Coast</p>
+                <p class="md:text-base text-xs">LCS Direct Pty Ltd trading as Report Simple</p>
+                <p class="md:text-base text-xs">ABN: 15 626 458 731</p>
             </div>
         </div>
     </footer>
